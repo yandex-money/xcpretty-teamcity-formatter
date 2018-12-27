@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.name          = "xcpretty-teamcity-formatter"
   spec.version       = "1.0.0"
   spec.authors       = ["Alxander Zalutskiy"]
-  spec.email         = ["metalhead.sanya@gmail.com"]
+  spec.email         = ["zalutskii@yamoney.ru"]
   spec.description   =
   %q{
   Formatter for xcpretty customized to provide pretty output on TeamCity
