@@ -3,9 +3,9 @@ class TeamCityFormatter < XCPretty::Simple
 	
 	def initialize (use_unicode, colorize)
     super
-    STDOUT.puts(##teamcity[compilationStarted compiler='xcodebuild'])
+    STDOUT.puts("##teamcity[compilationStarted compiler='xcodebuild']")
     at_exit do
-      STDOUT.puts(##teamcity[compilationFinished compiler='xcodebuild'])
+      STDOUT.puts("##teamcity[compilationFinished compiler='xcodebuild']")
 end
 
 	# Errors and warnings.
