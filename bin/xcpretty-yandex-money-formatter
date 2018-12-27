@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
 
-print File.expand_path('../../lib/teamcity_formatter.rb', __FILE__)
+print File.expand_path('../../lib/yandex_money_formatter.rb', __FILE__)

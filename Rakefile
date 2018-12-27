@@ -4,5 +4,5 @@ task :spec do
 end
 
 task :ci do
-  sh 'cat spec/fixtures/xcodebuild.log | xcpretty -f `bin/xcpretty-teamcity-formatter`'
+  sh 'cat spec/fixtures/xcodebuild.log | xcpretty -f `bin/xcpretty-yandex-money-formatter`'
 end

@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "xcpretty-yandex-money-formatter"
-  spec.version       = "1.0.0"
+  spec.version       = "1.0.1"
   spec.authors       = ["Alxander Zalutskiy"]
   spec.email         = ["zalutskii@yamoney.ru"]
   spec.description   =
