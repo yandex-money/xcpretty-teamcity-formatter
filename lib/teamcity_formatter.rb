@@ -2,12 +2,13 @@
 class TeamCityFormatter < XCPretty::Simple
 	
 	def initialize (use_unicode, colorize)
-    super
-    STDOUT.puts("##teamcity[compilationStarted compiler='xcodebuild']")
-    at_exit do
-      STDOUT.puts("##teamcity[compilationFinished compiler='xcodebuild']")
-end
-
+		super
+		STDOUT.puts("##teamcity[compilationStarted compiler='xcodebuild']")
+		at_exit do
+			STDOUT.puts("##teamcity[compilationFinished compiler='xcodebuild']")
+		end
+	end
+	
 	# Errors and warnings.
 	def format_compile_error(file_name, file_path, reason, line, cursor)
 		STDOUT.puts("##teamcity[message text='Compile error' errorDetails='#{super}' status='ERROR']\n")
@@ -43,7 +44,7 @@ end
 		STDOUT.puts("##teamcity[message text='Warning' errorDetails='#{super}' status='ERROR']\n")
 		super
 	end
-
+	
 	def format_compile_warning(file_name, file_path, reason, line, cursor)
 		STDOUT.puts("##teamcity[message text='Compile warning' errorDetails='#{super}' status='ERROR']\n")
 		super
