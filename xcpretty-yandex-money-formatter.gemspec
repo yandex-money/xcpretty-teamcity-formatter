@@ -1,7 +1,7 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "xcpretty-teamcity-formatter"
+  spec.name          = "xcpretty-yandex-money-formatter"
   spec.version       = "1.0.0"
   spec.authors       = ["Alxander Zalutskiy"]
   spec.email         = ["zalutskii@yamoney.ru"]
@@ -16,9 +16,9 @@ Gem::Specification.new do |spec|
   spec.files         = [
   	"README.md",
   	"LICENSE",
-  	"lib/teamcity_formatter.rb",
-  	"bin/xcpretty-teamcity-formatter"]
-  spec.executables   = ["xcpretty-teamcity-formatter"]
+  	"lib/yandex_money_formatter.rb",
+  	"bin/xcpretty-yandex-money-formatter"]
+  spec.executables   = ["xcpretty-yandex-money-formatter"]
   spec.require_paths = ["lib"]
   spec.add_dependency "xcpretty", "~> 0.2", ">= 0.0.7"
 
