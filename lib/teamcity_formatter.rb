@@ -41,7 +41,7 @@ class TeamCityFormatter < XCPretty::Simple
 	end
 	
 	def format_warning(message)
-		STDOUT.puts("##teamcity[message text='Warning' errorDetails='#{super}' status='ERROR']\n")
+		STDOUT.puts("##teamcity[message text='Warning' errorDetails='#{super}' status='WARNING']\n")
 		super
 	end
 	
